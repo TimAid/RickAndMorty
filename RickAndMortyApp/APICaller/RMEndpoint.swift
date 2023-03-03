@@ -8,7 +8,7 @@
 import Foundation
 
 /// Represent unique API endpoind. To get API info
-@frozen enum EndPoint: String {
+@frozen enum RMEndpoint: String {
     case character
     case location
     case episodes
