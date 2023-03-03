@@ -104,8 +104,8 @@
 		2EEDB3F629B080C6009CC273 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2EEDB40329B0A8F4009CC273 /* RMLocations.swift */,
 				2EEDB40729B0A90B009CC273 /* RMCharacters.swift */,
+				2EEDB40329B0A8F4009CC273 /* RMLocations.swift */,
 				2EEDB40929B0A911009CC273 /* RMEpisodes.swift */,
 			);
 			path = Models;
