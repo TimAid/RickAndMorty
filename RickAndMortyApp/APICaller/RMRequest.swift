@@ -20,13 +20,13 @@ final class RMRequest {
     
     //MARK: - Path Component
     ///https://rickandmortyapi.com/api/character  
-    private let pathComponent: Set<String>
+    private let pathComponent: [String]
      
     //MARK: Query filter parameter
     ///name=rick&status=alive
     private let queryParameters: [URLQueryItem]
     
-    public init(endpoint: RMEndpoint, pathComponent: Set<String> = [], queryParameters: [URLQueryItem] = []) {
+    public init(endpoint: RMEndpoint, pathComponent: [  String] = [], queryParameters: [URLQueryItem] = []) {
         self.endpoint = endpoint
         self.pathComponent = pathComponent
         self.queryParameters = queryParameters
@@ -61,5 +61,8 @@ final class RMRequest {
     public var url: URL? {
         return URL(string: urlString)
     }
+}
 
+extension RMRequest {
+    static let listCharacterRequest = RMRequest(endpoint: .character)
 }
